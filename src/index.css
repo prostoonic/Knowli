@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Roboto+Slab:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Onest', system-ui, sans-serif;
+  --font-display: 'Roboto Slab', Georgia, serif;
+  --color-paper: #fbfaf6;
+  --color-ink: #23302b;
+  --color-ink-soft: #5d6b64;
+  --color-line: #e3e8df;
+  --color-mint: #dff0e6;
+  --color-mint-deep: #2f7d5b;
+  --color-sun: #fbe8b5;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-sun);
+}
